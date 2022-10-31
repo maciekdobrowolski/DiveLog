@@ -13,8 +13,8 @@
   },
   "author": "Maciej Dobrowolski",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "dependencies": {}
 }
