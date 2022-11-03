@@ -98,3 +98,9 @@ body {
   height: 40px;
   width: auto;
 }
+
+.form_container{
+  background-color: white;
+  width: 200px;
+  margin: auto;
+}
