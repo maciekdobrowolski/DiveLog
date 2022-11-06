@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dive LOG</title>
+    <script src="dist/bundle.js" defer></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <div>
+            <h1>DIVE LOG</h1>
+            <h3>Your own diving history</h3>
+          </div>
+          <div class="logo_img_div">
+            <img
+              src="img/icons/output-onlinepngtools.png"
+              alt="logo"
+              class="logo_img"
+            />
+          </div>
+        </div>
+        <div class="googleBtn">G</div>
+      </div>
+    </header>
+    <section>
+      <div class="menu">
+        <div class="menuBox greenBox">
+          <!-- menu będzie się zawijać do góry i czy będzie absolutnie przypięta?-->
+          Add dive
+          <div class="menu_icon">
+            <img src="img/icons/plus.png" class="logo_img" />
+          </div>
+        </div>
+        <div class="menuBox blueBox">
+          LogBook
+          <div class="menu_icon">
+            <img src="img/icons/db.png" class="logo_img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="app">
+      <div class="form_container">
+        <div class="form_Tile">
+          <h2>Dive (OC)</h2>
+          <label>
+            Date
+            <input type="date">
+          </label>
+          <label>
+            Hour of immersion
+            <input type="time">
+          </label>
+          <label>
+            Duration [min]
+            <input type="number" min="1" max="200">
+          </label>
+          <label>
+            Max depth [m]
+            <input type="number" min="1" max="150">
+          </label>
+          <label>
+            Average depth [m]
+            <input type="number" min="1" max="150">
+          </label>
+        </div>
+
+        <div class="form_Tile">
+          <h2>GAS</h2>
+          <label>
+            Gas name
+            <input type="text" value="air">
+          </label>
+          <label>
+            Number of cylinders (description)
+            <input type="text" placeholder="Single/ Twinset/ Twinset+ stage">
+          </label>
+          <label>
+            Total cylinders volume [l]
+            <input type="number" min="1" max="50">
+          </label>
+          <label>
+            Start press [bar]
+            <input type="number" min="50" max="350">
+          </label>
+          <label>
+            End press [bar]
+            <input type="number" min="0" max="300">
+          </label>
+
+          <p><i>SAC: <i></p>
+        </div>
+
+        <div class="form_Tile">
+          <h2>Place</h2>
+          <label>
+            Location
+            <input type="text" placeholder="Poland, Baltic... wreck">
+          </label>
+        </div>
+
+        <div class="form_Tile">
+          <h2>Water</h2>
+          <label>
+            Water temperature (Celsius)
+            <input type="number" min="1" max="150">
+          </label>
+          <label>
+            Air temperature (Celsius)
+            <input type="number" min="1" max="150">
+          </label>
+          <label>
+            Water type (density) Fresh
+            <select id="water_type">
+              <option value="fresh">fresh</option>
+              <option value="salt">salt</option>
+            </select>
+          </label>
+          <div>
+            <label>
+              Currnet strength (5- extremly)
+              <div class="button_group">
+                <button id="cur0">0</button>
+                <button id="cur1">1</button>
+                <button id="cur2">2</button>
+                <button id="cur3">3</button>
+                <button id="cur4">4</button>
+                <button id="cur5">5</button>
+              </div>
+            </label>
+          </div>
+          <div>
+            <label>
+              Visibility
+              <div class="button_group">
+                <button id="vis1">1</button>
+                <button id="vis2">2</button>
+                <button id="vis3">3</button>
+                <button id="vis4">4</button>
+                <button id="vis5">5</button>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="form_Tile">
+          <h2>Equipment</h2>
+          <div>
+            <label>
+              Suit
+              <div class="button_group">
+                <button id="dry">dry</button>
+                <button id="wet">wet</button>
+              </div>
+            </label>
+          </div>
+          <label>
+            Weight
+            <input type="number" min="0" max="20">
+          </label>
+          <label>
+            Details of equipment
+            <textarea
+              placeholder="Green wing and my favourite orange drysuit..."
+            ></textarea>
+          </label>
+        </div>
+
+        <div class="form_Tile">
+          <h2>Buddy</h2>
+          <label>
+            Buddy/ Diveguide
+            <input type="text" placeholder="John...">
+          </label>
+        </div>
+
+        <div class="form_Tile">
+          <h2>Notes</h2>
+          <div>
+            <label>
+              Diving rate
+              <div class="button_group">
+                <button id="rate1">1</button>
+                <button id="rate2">2</button>
+                <button id="rate3">3</button>
+                <button id="rate4">4</button>
+                <button id="rate5">5</button>
+              </div>
+            </label>
+          </div>
+          <label>
+            Notes
+            <textarea
+              placeholder="Short note about dive... / I saw a huge shark!"
+            ></textarea>
+          </label>
+        </div>
+        <!--<div>
+          <h2>Media</h2>
+        </div>-->
+      </div>
+    </div>
+
+    <div class="add_btn">
+      <h2>Add dive</h2>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: url(img/ignasi_pattern_s.png);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  height: 85px;
+  background-color: #7952b3;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.logo {
+  margin-left: 15px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.logo h1{
+  font-size: 35px;
+}
+
+.logo h3{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.logo_img_div {
+  height: 70px;
+  width: 70px;
+  margin-left: 7px;
+}
+
+.logo_img {
+  height: 100%;
+  width: auto;
+}
+
+.googleBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: coral;
+  width: 45px;
+  height: 45px;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content:space-around;
+  padding-top: 100px;
+  height: 80%;
+}
+
+.menuBox {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 20px;
+}
+
+.greenBox{
+  background-color: #198754;
+}
+
+.greenBox:hover{
+  background-color: #157347;
+}
+
+.blueBox{
+  background-color: #3286e0;
+}
+
+.blueBox:hover{
+  background-color: #007bff;
+}
+
+.menu_icon{
+  margin-top: 20px;
+  height: 40px;
+  width: auto;
+}
+
+.form_container{
+  margin: auto;
+  margin-top: 20px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.form_Tile{
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+  color: #797979;
+}
+.form_Tile h2{
+  background: #7952b3;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+  color: #fff;
+  cursor: pointer;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+.form_Tile input[type="text"],
+.form_Tile input[type="date"],
+.form_Tile input[type="datetime"],
+.form_Tile input[type="email"],
+.form_Tile input[type="number"],
+.form_Tile input[type="search"],
+.form_Tile input[type="time"],
+.form_Tile input[type="url"],
+.form_Tile input[type="password"],
+.form_Tile textarea,
+.form_Tile select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px "Popins", sans-serif;
+	height: 45px;
+}
+.form_Tile textarea{
+	resize:none;
+	overflow: hidden;
+}
+.form_Tile input[type="button"], 
+.form_Tile button,
+.form_Tile input[type="submit"]{
+	background-color: #2CBBBB;
+	border: 1px solid #27A0A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.form_Tile button:hover,
+.form_Tile input[type="button"]:hover, 
+.form_Tile input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+	background-color:#34CACA;
+}
+
+.form_Tile .button_group{
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.add_btn h2{
+  text-align: center;
+  background-color: #28a745;
+  padding: 20px;
+  width: 500px;
+  margin: 50px auto;
+  color: white;
+  cursor: pointer;
+}
+
